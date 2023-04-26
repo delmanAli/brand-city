@@ -11,8 +11,13 @@ class StorageService extends GetxService {
     GetStorage().write(key, value);
   }
 
-  String read(String key) {
-    return GetStorage().read(key);
+  read(String key) {
+    if (GetStorage().read(key) == null) {
+      return '';
+    } else {
+      return GetStorage().read(key);
+    }
+    // return GetStorage().read(key);
   }
 
   void remove(String key) {
@@ -21,5 +26,9 @@ class StorageService extends GetxService {
 
   void erase() {
     GetStorage().erase();
+  }
+
+  void writeIfNull(String key, dynamic value) {
+    GetStorage().writeIfNull(key, value);
   }
 }

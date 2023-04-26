@@ -70,4 +70,6 @@ final Map<String, String> ku = {
   Strings.deleteAccount: 'سڕینەوەی حساب',
   Strings.deleteAccountMsg: 'دڵنیایت لە سڕینەوەی حسابەکەت؟',
   Strings.ok: 'باشە',
+  Strings.continues: 'دواتر',
+  Strings.chooseLanguage: 'زمانی دڵخوازت هەڵبژێرە',
 };

@@ -53,4 +53,6 @@ final Map<String, String> ar = {
   Strings.paying: 'دفع',
   Strings.or: 'أو',
   Strings.ok: 'تم',
+  Strings.continues: 'متابعة',
+  Strings.chooseLanguage: 'اختر لغة التطبيق الخاصة بك',
 };

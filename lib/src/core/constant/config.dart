@@ -30,7 +30,7 @@ class Configs {
 
   //onboarding
   final String onboardingKey = "onboarding";
-  final String onboardingValue = "1";
+  final String onboardingVal = "1";
 
   //status
   Map<String, Color> orderStatusColor = {};

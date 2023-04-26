@@ -2,6 +2,8 @@ class Strings {
   static const String getStarted = 'Get Started';
   static const String next = 'Next';
   static const String changeLanguage = 'change_language';
+  static const String chooseLanguage = 'Choose Your Language';
+
   static const String signUp = 'Sign Up';
   static const String signIn = 'Sign In';
   static const String otp = 'OTP';
@@ -70,4 +72,6 @@ class Strings {
   static const String or = 'OR';
   static const String ins = 'in';
   static const String ok = 'OK';
+  static const String skip = 'Skip';
+  static const String continues = 'continue';
 }

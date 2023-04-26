@@ -6,6 +6,9 @@ const String LOTTIE_PATH = "assets/lotties";
 
 class ImageManager {
   static const String banner1 = '$IMAGE_PATH/banner1.png';
+  static const String appLogo = '$IMAGE_PATH/brandcitylogo.png';
+  static const String appLogo2 = '$IMAGE_PATH/logotw.png';
+  static const String moon = '$IMAGE_PATH/moon.png';
 }
 
 class LogoManager {
@@ -13,5 +16,5 @@ class LogoManager {
 }
 
 class LottieManager {
-  static const String notification = '$LOTTIE_PATH/781-no-notifications.json';
+  static const String deliveryGuy = '$LOTTIE_PATH/delivery-guy.json';
 }

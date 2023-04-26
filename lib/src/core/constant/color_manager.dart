@@ -6,10 +6,13 @@ class ColorManager {
   static Color primaryColor = HexColor.fromHex("#2F4EA0");
 
   static Color secondaryColor = HexColor.fromHex("#243A75");
+  static Color secondaryBlackColor = HexColor.fromHex("#2F2E41");
+  static Color secondaryGrayColor = HexColor.fromHex("#B2CFF3");
 
   static Color errorColor = HexColor.fromHex("#CC0000");
   static Color scaffoldColor = HexColor.fromHex("#DFDFDF");
   static Color acsYelloColor = HexColor.fromHex("#FFCCCC");
+  static Color whiteColor = HexColor.fromHex("#FFFFFF");
 }
 
 extension HexColor on Color {
