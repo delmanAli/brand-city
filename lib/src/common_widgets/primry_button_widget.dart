@@ -5,13 +5,15 @@ class PrimeryButtonWidget extends StatelessWidget {
     super.key,
     required this.onPressed,
     required this.text,
-    this.backgroundColor = Colors.blue,
-    this.foregroundColor = Colors.white,
+    this.style,
+    this.backgroundColor,
+    this.foregroundColor,
   });
   final VoidCallback onPressed;
   final String text;
   final Color? backgroundColor;
   final Color? foregroundColor;
+  final TextStyle? style;
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +26,7 @@ class PrimeryButtonWidget extends StatelessWidget {
         ),
       ),
       onPressed: onPressed,
-      child: Text(text),
+      child: Text(text, style: style),
     );
   }
 }

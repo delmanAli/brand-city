@@ -72,6 +72,9 @@ class Strings {
   static const String or = 'OR';
   static const String ins = 'in';
   static const String ok = 'OK';
+  static const String logWith = 'log in with';
+  static const String forgetPassword = 'Forgot Your Password?';
   static const String skip = 'Skip';
+  static const String address = 'Address';
   static const String continues = 'continue';
 }

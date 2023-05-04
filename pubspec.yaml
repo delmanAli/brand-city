@@ -23,6 +23,9 @@ dependencies:
   equatable: ^2.0.5
   cached_network_image: ^3.2.3
   smooth_page_indicator: ^1.1.0
+  intl_phone_number_input: ^0.7.0+2
+  pin_code_fields: ^7.3.0
+  
 
 dev_dependencies:
   flutter_test:

@@ -7,15 +7,16 @@ flutter mini e-commerce test
 - [x] init git
 - [x] Create a new Flutter project
 - [x] Create README.md tasks list
-- [ ] init folder structure
-- [ ] init main pakages
+- [x] init folder structure
+- [x] init main pakages
 
-- [ ] Choose Language page
-- [ ] onboarding screens
-- [ ] Splash Screen
-- [ ] Login Page
-- [ ] Register Page
-- [ ] Text Form Field Widget
+- [x] Choose Language page
+- [x] onboarding screens
+- [x] Splash Screen
+- [x] Login Page
+- [x] Register Page
+- [x] Otp Page
+- [x] Text Form Field Widget
 - [ ] Location Page map
 - [ ] Bottom Navigation Bar 5 items.
 

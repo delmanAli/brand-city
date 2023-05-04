@@ -1,4 +1,5 @@
 import 'package:brand_city/src/core/constant/config.dart';
+import 'package:brand_city/src/core/constant/theme_manager.dart';
 import 'package:brand_city/src/core/localization/translation_controller.dart';
 import 'package:brand_city/src/core/localization/translation_manager.dart';
 import 'package:flutter/material.dart';
@@ -19,14 +20,14 @@ class RootApp extends StatelessWidget {
       useInheritedMediaQuery: true,
       title: 'BRAND CITY',
       debugShowCheckedModeBanner: false,
-      // theme: ThemeManager.themeLightEng,
-      theme: ThemeData.dark(),
+      theme: ThemeManager.themeLight,
+      // theme: ThemeData.dark(),
       locale: languageController.language ?? Locale(_config.english),
       fallbackLocale: Locale(_config.english),
       translations: TranslationManager(),
       // initialBinding: InitialBindings(),
       getPages: AppPages.pages,
-      initialRoute: Routers.splash,
+      initialRoute: Routers.verification,
       defaultTransition: Transition.fadeIn,
     );
   }

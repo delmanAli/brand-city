@@ -15,7 +15,7 @@ class ThemeManager {
     fontFamily: fontFamilySelector(),
     primaryColor: ColorManager.primaryColor,
     // backgroundColor: ColorManager.scaffoldBackgroundColor,
-    // scaffoldBackgroundColor: ColorManager.scaffoldBackgroundColor,
+    scaffoldBackgroundColor: ColorManager.scaffoldColor,
     appBarTheme: AppBarTheme(
       systemOverlayStyle: const SystemUiOverlayStyle(
         statusBarBrightness: Brightness.light,
@@ -41,12 +41,12 @@ class ThemeManager {
     inputDecorationTheme: InputDecorationTheme(
       errorBorder: OutlineInputBorder(
         borderSide: BorderSide(color: ColorManager.errorColor),
-        borderRadius: BorderRadius.circular(4.0),
+        borderRadius: BorderRadius.circular(10),
       ),
-      border: OutlineInputBorder(
-        borderSide: const BorderSide(color: Colors.grey),
-        borderRadius: BorderRadius.circular(4.0),
-      ),
+      // border: OutlineInputBorder(
+      //   borderSide: const BorderSide(color: Colors.grey),
+      //   borderRadius: BorderRadius.circular(10),
+      // ),
       hintStyle: TextStyle(
         fontFamily: fontFamilySelector(),
         fontSize: 16.0,
