@@ -1,3 +1,6 @@
+import 'package:brand_city/src/features/category/category_page.dart';
+import 'package:brand_city/src/features/dashboard/di/dashboard_di.dart';
+import 'package:brand_city/src/features/home/home_page.dart';
 import 'package:brand_city/src/features/locations/location_page.dart';
 import 'package:brand_city/src/features/onboarding/onboarding_page.dart';
 import 'package:brand_city/src/features/splash/business_logic/splash_di.dart';
@@ -7,7 +10,6 @@ import 'package:brand_city/src/features/auth/sign_in/sign_in_page.dart';
 import 'package:brand_city/src/features/auth/sign_up/sign_up_page.dart';
 import 'package:brand_city/src/features/auth/verification/verification_otp_page.dart';
 import 'package:brand_city/src/features/brands/brands_page.dart';
-import 'package:brand_city/src/features/category/category_page.dart';
 import 'package:brand_city/src/features/dashboard/dashboard_view.dart';
 import 'package:brand_city/src/features/language/language_page.dart';
 import 'package:brand_city/src/features/splash/splash_page.dart';
@@ -34,9 +36,15 @@ abstract class AppPages {
       name: Routers.location,
       page: () => const LocationPage(),
     ),
+    // GetPage(
+    //   name: Routers.home,
+    //   page: () => HomePage(),
+    //   binding: DashboardBinding(),
+    // ),
     GetPage(
       name: Routers.dashboard,
       page: () => const DashboardView(),
+      binding: DashboardBinding(),
     ),
     GetPage(
       name: Routers.signIn,

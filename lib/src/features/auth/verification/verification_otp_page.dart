@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:brand_city/src/common_widgets/primry_button_widget.dart';
 import 'package:brand_city/src/core/constant/color_manager.dart';
 import 'package:brand_city/src/features/auth/business_logic/controllers/sign_up_controller.dart';
+import 'package:brand_city/src/route/pages.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
@@ -99,7 +100,9 @@ class VerificationOtpPage extends GetView<SignUpController> {
                     height: 60,
                     child: PrimeryButtonWidget(
                       foregroundColor: ColorManager.primaryColor,
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.offNamed(Routers.dashboard);
+                      },
                       text: 'Verify',
                       style: const TextStyle(
                         color: Colors.white,

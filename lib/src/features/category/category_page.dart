@@ -1,3 +1,4 @@
+import 'package:brand_city/src/features/category/category_list_view.dart';
 import 'package:flutter/material.dart';
 
 class CategoryPage extends StatelessWidget {
@@ -5,6 +6,8 @@ class CategoryPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      body: CategoryListViewWidget(),
+    );
   }
 }

@@ -18,7 +18,7 @@ flutter mini e-commerce test
 - [x] Otp Page
 - [x] Text Form Field Widget
 - [ ] Location Page map
-- [ ] Bottom Navigation Bar 5 items.
+- [x] Bottom Navigation Bar 5 items.
 
 - [ ] Home Page
 - [ ] Home ads
@@ -57,7 +57,7 @@ flutter mini e-commerce test
 
 - [ ] Feedback page
 
-- [ ] Primary button widget
-- [ ] Create theme class
+- [x] Primary button widget
+- [x] Create theme class
 
 ## Issues

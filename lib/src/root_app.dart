@@ -16,19 +16,27 @@ class RootApp extends StatelessWidget {
   Widget build(BuildContext context) {
     final languageController =
         Get.put<TranslationController>(TranslationController());
-    return GetMaterialApp(
-      useInheritedMediaQuery: true,
-      title: 'BRAND CITY',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeManager.themeLight,
-      // theme: ThemeData.dark(),
-      locale: languageController.language ?? Locale(_config.english),
-      fallbackLocale: Locale(_config.english),
-      translations: TranslationManager(),
-      // initialBinding: InitialBindings(),
-      getPages: AppPages.pages,
-      initialRoute: Routers.verification,
-      defaultTransition: Transition.fadeIn,
+    return GestureDetector(
+      onTap: () {
+        final FocusScopeNode currentFocus = FocusScope.of(context);
+        if (!currentFocus.hasPrimaryFocus && currentFocus.hasFocus) {
+          FocusManager.instance.primaryFocus!.unfocus();
+        }
+      },
+      child: GetMaterialApp(
+        useInheritedMediaQuery: true,
+        title: 'BRAND CITY',
+        debugShowCheckedModeBanner: false,
+        theme: ThemeManager.themeLight,
+        // theme: ThemeData.dark(),
+        locale: languageController.language ?? Locale(_config.english),
+        fallbackLocale: Locale(_config.english),
+        translations: TranslationManager(),
+        // initialBinding: InitialBindings(),
+        getPages: AppPages.pages,
+        initialRoute: Routers.verification,
+        defaultTransition: Transition.fadeIn,
+      ),
     );
   }
 }

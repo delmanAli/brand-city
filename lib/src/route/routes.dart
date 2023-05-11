@@ -12,4 +12,8 @@ class Routers {
   static const category = '/category';
   static const brands = '/brands';
   static const productDetails = '/product-details';
+  static const home = '/home';
+  static const profile = '/profile';
+  static const settings = '/settings';
+  static const cart = '/cart';
 }

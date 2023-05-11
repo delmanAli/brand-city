@@ -23,9 +23,12 @@ class ThemeManager {
         statusBarIconBrightness: Brightness.dark,
       ),
       centerTitle: true,
-      color: Colors.transparent,
+      foregroundColor: Colors.white,
+      // backgroundColor: ColorManager.primaryColor,
+      color: ColorManager.primaryColor,
       titleTextStyle: TextStyle(
         fontFamily: fontFamilySelector(),
+        color: Colors.white,
         fontSize: 18.0,
         fontWeight: FontWeight.w600,
       ),
@@ -34,8 +37,8 @@ class ThemeManager {
     ),
     colorScheme: ColorScheme.fromSwatch().copyWith(
       primary: ColorManager.primaryColor,
-      secondary: ColorManager.primaryColor,
-      onSecondary: ColorManager.primaryColor,
+      secondary: ColorManager.secondaryColor,
+      onSecondary: ColorManager.secondaryColor,
     ),
 
     inputDecorationTheme: InputDecorationTheme(
